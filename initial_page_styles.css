@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom, rgb(255, 232, 129), rgb(132, 181, 255));
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    background-color: rgb(139, 149, 206);
+    color: white;
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    padding-left: 0;
+}
+
+h2 {
+    margin-top: 5%;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 0;
+}
+
+h3 {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+#projects ol {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    flex: 100%;
+}
+
+#exercises ol {
+    margin-top: -20px;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+
+#container {
+    flex: 100%;
+}
+
+#container p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#second {
+    margin-top: 10px;
+    flex:1;
+}
+
+.box {
+    background-color:thistle;
+    padding: 20px;
+    margin-top:5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+}
+
+.ex, .links{
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+    min-height: 50px;
+    background: rgb(139, 149, 206);
+    border-top: 5px solid rgb(255, 255, 255);
+    margin-top: 2em;
+    color: white;
+}
+
+footer p {
+    padding: 0.5em;
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        background-image: linear-gradient(to bottom, rgb(255, 124, 107), rgb(255, 232, 129));
+    }
+
+    h1 {
+        font-size: 40px;
+        transition: all 0.5s ease-out;
+        color: black;
+        background-color: burlywood;
+        border: none;
+    }
+
+    h1:hover {
+        transform: scale(1.2);
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    header {
+        display: flex;
+        width: auto;
+        padding: 20px;
+        margin: auto;
+        border-bottom: 5px solid rgb(255, 255, 255);
+        background-color: burlywood;
+    }
+
+    #projects {
+        margin-bottom: 30px;
+    }
+
+    #second {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .box {
+        background-color:rgb(255, 221, 177);
+        padding: 20px;
+        margin-top:2%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-radius: 20px;
+        transition: all 0.2s ease-out;
+    }
+
+    .box:hover {
+        background-color:rgb(255, 210, 159);
+    }
+
+    .tools, .category {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .ex, .links {
+        flex:1;
+        background-color:rgb(255, 222, 180);
+        padding: 20px;
+        margin-top:2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 20px;
+        transition: all 0.2s ease-out;
+    }
+    
+    .ex:hover, .links:hover {
+        background-color: rgb(255, 213, 158);
+    }
+
+    .ex, .links, ol, ul {
+        text-align: center;
+        padding-bottom: 3%;
+        
+    }
+
+    footer {
+        background: rgb(214, 200, 178);
+        color: black;
+        flex: 100%;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 1em;
+    }
+
+    footer p a {
+        text-decoration: none;
+        color: rgb(109, 53, 49);
+    }
+}
